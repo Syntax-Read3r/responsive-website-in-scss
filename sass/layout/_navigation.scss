@@ -1,7 +1,7 @@
 .nav {
-    // &__checkbox {
-    //     // display: none;
-    // }
+    &__checkbox {
+         display: none;
+     }
 
     &__button {
         background-color: $white-color;
@@ -104,7 +104,8 @@
     }
 
 
-    //FUNCTIONALITY
+    //Functionality for the navigation
+
     &__checkbox:checked ~ &__background {
         transform: scale(80);
     }
@@ -115,7 +116,7 @@
     }
 
 
-    //ICON
+    //Icon
     &__icon {
         position: relative;
         margin-top: 3.5rem;
