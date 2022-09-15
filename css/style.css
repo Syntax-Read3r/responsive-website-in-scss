@@ -1,3 +1,63 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+    -webkit-transform: translateX(-10rem);
+    -moz-transform: translateX(-10rem);
+    -ms-transform: translateX(-10rem);
+    -o-transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem);
+    -webkit-transform: translateX(1rem);
+    -moz-transform: translateX(1rem);
+    -ms-transform: translateX(1rem);
+    -o-transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+    -webkit-transform: translateX(10rem);
+    -moz-transform: translateX(10rem);
+    -ms-transform: translateX(10rem);
+    -o-transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem);
+    -webkit-transform: translateX(-1rem);
+    -moz-transform: translateX(-1rem);
+    -ms-transform: translateX(-1rem);
+    -o-transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateX(3rem);
+    -webkit-transform: translateX(3rem);
+    -moz-transform: translateX(3rem);
+    -ms-transform: translateX(3rem);
+    -o-transform: translateX(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0); } }
+
 *,
 *::after
 *::before {
@@ -48,16 +108,20 @@ body {
     display: block;
     font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 3.5rem; }
+    letter-spacing: 3.5rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; }
     @media only screen and (max-width: 37.5em) {
       .header__text--primary-main {
         font-size: 3rem;
         letter-spacing: 1rem; } }
   .header__text--primary-sub {
     display: block;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    letter-spacing: 1.75rem; }
+    letter-spacing: 1.75rem;
+    animation: moveInRight 1s ease-out; }
     @media only screen and (max-width: 37.5em) {
       .header__text--primary-sub {
         font-size: 1.5rem;
@@ -86,6 +150,28 @@ body {
   @media only screen and (max-width: 56.25em) {
     .u-margin-top-big {
       margin-top: 5rem !important; } }
+
+.btn, .btn:link, .btn:visited {
+  display: inline-block;
+  padding: 1.5rem 4rem;
+  border-radius: 10rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all 0.2s;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  -ms-border-radius: 10rem;
+  -o-border-radius: 10rem;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  position: relative;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  border: none;
+  cursor: pointer; }
 
 .header {
   height: 85vh;

@@ -1,0 +1,41 @@
+.btn {
+	&,
+	&:link,
+	&:visited {
+		display: inline-block;
+		padding: 1.5rem 4rem;
+		border-radius: 10rem;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: 700;
+		transition: all 0.2s;
+		-webkit-border-radius: 10rem;
+		-moz-border-radius: 10rem;
+		-ms-border-radius: 10rem;
+		-o-border-radius: 10rem;
+		-webkit-transition: all 0.2s;
+		-moz-transition: all 0.2s;
+		-ms-transition: all 0.2s;
+		-o-transition: all 0.2s;
+		position: relative;
+		font-size: $default-font-size;
+		line-height: $default-line-height;
+
+		// Change for the <Button element>
+
+		border: none;
+		cursor: pointer;
+	}
+	// &:hover {
+	// }
+
+	&--white {
+		background-color: white;
+		color: $grey-color--dark-1;
+
+		&:hover {
+			background-color: $grey-color--light-3;
+			color: $grey-color--dark-1;
+		}
+	}
+}
