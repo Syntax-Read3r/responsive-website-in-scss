@@ -1,10 +1,10 @@
-.nav {
-    &__checkbox {
-         display: none;
-     }
+.navigation {
+    // &__checkbox {
+    //     // display: none;
+    // }
 
     &__button {
-        background-color: $white-color;
+        background-color: $color-white;
         height: 7rem;
         width: 7rem;
         position: fixed;
@@ -12,7 +12,7 @@
         right: 6rem;
         border-radius: 50%;
         z-index: 2000;
-        box-shadow: 0 1rem 3rem rgba($black-color, .1);
+        box-shadow: 0 1rem 3rem rgba($color-black, .1);
         text-align: center;
         cursor: pointer;
 
@@ -34,7 +34,7 @@
         position: fixed;
         top: 6.5rem;
         right: 6.5rem;
-        background-image: radial-gradient($primary-color--light, $primary-color--dark);
+        background-image: radial-gradient($color-primary-light, $color-primary-dark);
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
 
@@ -82,10 +82,10 @@
             font-size: 3rem;
             font-weight: 300;
             padding: 1rem 2rem;
-            color: $white-color;
+            color: $color-white;
             text-decoration: none;
             text-transform: uppercase;
-            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $white-color 50%);
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
             background-size: 220%;
             transition: all .4s;
 
@@ -98,14 +98,13 @@
         &:hover,
         &:active {
             background-position: 100%;
-            color: $primary-color;
+            color: $color-primary;
             transform: translateX(1rem);
         }
     }
 
 
-    //Functionality for the navigation
-
+    //FUNCTIONALITY
     &__checkbox:checked ~ &__background {
         transform: scale(80);
     }
@@ -116,7 +115,7 @@
     }
 
 
-    //Icon
+    //ICON
     &__icon {
         position: relative;
         margin-top: 3.5rem;
@@ -126,7 +125,7 @@
         &::after {
             width: 3rem;
             height: 2px;
-            background-color: $grey-color--dark-3;
+            background-color: $color-grey-dark-3;
             display: inline-block;
         }
 

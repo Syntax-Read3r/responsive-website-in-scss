@@ -2,13 +2,21 @@
     height: 85vh;
     background-image: linear-gradient(
         to right bottom,
-        rgba($primary-color--dark,1 ),
-        rgba($primary-color--light, 1)),
+        rgba($color-primary-dark,1 ),
+        rgba($color-primary-light, 1)),
     url(../img/hero-small.jpg);
     background-size: cover;
     background-position: top;
     position: relative;
     height: 85vh;
+
+
+    // background-image: radial-gradient( circle 610px at 5.2% 51.6%,  #050872 0%, rgba(7,3,53,1) 97.5% ),
+    // url(../img/hero-small.jpg);
+    // background-size: cover;
+    // background-position: top;
+    // position: relative;
+    
 
     @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -21,8 +29,8 @@
             only screen and (min-width: 125em) {
         background-image: linear-gradient(
             to right bottom,
-            rgba($primary-color--light, 0.8),
-            rgba($primary-color--dark, 0.8)),
+            rgba($color-primary-light, 0.8),
+            rgba($color-primary-dark, 0.8)),
         url(../img/hero.jpg);
     }
 
@@ -31,7 +39,7 @@
         clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
     }
 
-    &__logo--container {
+    &__logo-box {
         position: absolute;
         // top: 0rem;
         left: 4rem;
@@ -41,7 +49,7 @@
         height: 15.5rem;
     }
     
-    &__text--container {
+    &__text-box {
         position: absolute;
         top: 40%;
         left: 50%;
